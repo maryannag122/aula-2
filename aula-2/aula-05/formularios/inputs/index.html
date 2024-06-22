@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <h1>Lista de inputs</h1>
+    <hr>
+
+    <div>
+        <!--Rotulo do input(vincular com o botão-nomea)-->
+        <label for="nome">Nome</label>
+        <!--Botão que escreve-->
+        <input type="text" name="nome" id="nome" maxlength="5" minlength="2">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="senha">Senha</label>
+        <!--password (esconde a senha)-->
+        <input type="password" name="senha" id="senha" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="">Hidden</label>
+        <!--clica no Ctrl + espaço (consegue ver todos os inputs)-->
+        <input type="hidden">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="data">Data</label>
+        <input type="date" name="data" id="data">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor">
+    </div>
+
+    <br>
+
+    <div>
+        <!--Data e hora juntos-->
+        <label for="data-hora">Data e Hora</label>
+        <input type="datetime-local" name="data-hora" id="data-hora">
+    </div>
+
+    <br>
+
+    <div>
+        <!--Seleciona um arquivo do pc-->
+        <label for="arquivo">Arquivo</label>
+        <input type="file" name="arquivo" id="arquivo">
+    </div>
+
+    <br>
+
+    <div>
+        <!--Barra de rolamento-->
+        <label for="slide">Slide</label>
+        <input type="range" name="slide" id="slide">
+    </div>
+
+    <br>
+
+    <div>
+        <!--Só aceita número-->
+        <label for="numero">Numero</label>
+        <input type="number" name="numero" id="numero">
+    </div>
+
+    <br>
+
+    <div>
+        <fieldset>
+            <!--Opção de marcação única-->
+            <legend>Inputs Radio</legend>
+
+            <input type="radio" name="radio" id="radio1">
+            <label for="radio1">Radio1</label>
+
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2">Radio2</label>
+
+            <input type="radio" name="radio" id="radio3">
+            <label for="radio3">Radio3</label>
+        </fieldset>
+    </div>
+
+    <br>
+
+    <div>
+        <!--Opção para textos maiores-->
+        <label for="area-texto">Área de texto</label> <br>
+        <textarea name="area-texto" id="area-texto" rows="10" cols="40"></textarea>
+    </div>
+
+    <br>
+
+    <div>
+        <!--Tag para selecionar a opção desejada-->
+        <select name="select" id="select">
+            <option value="opcao-1">Opção 1</option>
+            <option value="opcao-2">Opção 2</option>
+            <option value="opcao-3">Opção 3</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div>
+        <!--Lista-->
+        <label for="data-lista">Data List</label>
+        <input list="data-lista" name="data-lista" id="">
+
+        <datalist id="data-lista">
+            <option value="opcao1"></option>
+            <option value="opcao2"></option>
+            <option value="opcao3"></option>
+        </datalist>
+    </div>
+</body>
+</html>
